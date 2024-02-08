@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.User-Header {
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: darkcyan;
+}
+
+.nav {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+}
+
+li {
+    cursor: pointer; 
+}
+
+li:hover {
+    color: darkgoldenrod;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    display: none;
+    color: #010103;
+    cursor: pointer;
+}
+
+.HeaderButtons {
+    width: 200px;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logOutBtn {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.resNav {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .User-Header {
+        height: 80px; 
+        padding: 1rem 2rem;
+    }
+
+    .menu-btn {
+        display: inline;
+    }
+
+    .nav {
+        display: none;
+        font-size: 18px;
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+        border: 3px solid blanchedalmond;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #010103;
+    }
+
+    .nav.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: darkgoldenrod;
+    }
+
+    .nav li {
+        padding: 10px;
+        margin: 5px; 
+        color: #d3ad7f;
+    }
+
+    .HeaderButtons {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .logOutBtn {
+        margin-right: 10px;
+    }
+
+    .resNav {
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .User-Header {
+        padding: 1rem;
+    }
+
+    .nav {
+        width: 200px;
+    }
+}
